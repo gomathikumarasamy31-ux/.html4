@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kumarathal - Portfolio</title>
+
+    <style>
+
+        /* ===== GENERAL ===== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: lightblue;
+            color: #333;
+            line-height: 1.6;
+        }
+
+
+        /* ===== HEADER ===== */
+
+        header {
+            background: linear-gradient(135deg, blue, purple);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .linkedin-btn {
+            display: inline-block;
+            text-decoration: none;
+            background-color: white;
+            color: blue;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .linkedin-btn:hover {
+            background-color: pink;
+            color: white;
+            transform: scale(1.05);
+        }
+
+
+        /* ===== MAIN CONTAINER ===== */
+
+        .container {
+            width: 85%;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+
+        /* ===== CARD ===== */
+
+        .card {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .card h2 {
+            color: purple;
+            margin-bottom: 15px;
+            border-bottom: 2px solid blue;
+            padding-bottom: 8px;
+        }
+
+
+        /* ===== PROFILE ===== */
+
+        .profile {
+            text-align: center;
+        }
+
+        .profile p {
+            font-size: 17px;
+            color: #555;
+        }
+
+
+        /* ===== EDUCATION ===== */
+
+        .education-box {
+            border-left: 4px solid purple;
+            padding-left: 20px;
+        }
+
+        .education-box h3 {
+            color: #222;
+            margin-bottom: 5px;
+        }
+
+        .education-box p {
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+
+        /* ===== SKILLS ===== */
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background-color: lightblue;
+            color: blue;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            background-color: green;
+            color: white;
+            transform: scale(1.05);
+        }
+
+
+        /* ===== SOFT SKILLS ===== */
+
+        .soft-skills {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .soft {
+            background-color: #f8fafc;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid lightblue;
+            text-align: center;
+            font-weight: bold;
+        }
+
+
+        /* ===== CONTACT ===== */
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 8px 0;
+        }
+
+        .contact a {
+            color: purple;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            color: green;
+        }
+
+
+        /* ===== FOOTER ===== */
+
+        footer {
+            background-color: purple;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+
+        /* ===== MOBILE ===== */
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            .container {
+                width: 92%;
+            }
+
+            .soft-skills {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            .skills {
+                justify-content: center;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+
+    <header>
+
+        <h1>Kumarathal</h1>
+
+        <p>B.Sc. Information Technology Student</p>
+
+        <a class="linkedin-btn"
+           href="https://www.linkedin.com/in/kumarathal-k-628357431"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            View LinkedIn
+
+        </a>
+
+    </header>
+
+
+    <!-- ===== MAIN CONTENT ===== -->
+
+    <div class="container">
+
+
+        <!-- ===== PROFILE ===== -->
+
+        <div class="card profile">
+
+            <h2>Profile</h2>
+
+            <p>
+                A passionate B.Sc Information Technology student
+                with strong interest in web development and programming.
+                Dedicated, quick learner, and motivated to apply technical
+                skills in a professional environment. Seeking an opportunity
+                to grow and contribute as a fresher.
+            </p>
+
+        </div>
+
+
+        <!-- ===== EDUCATION ===== -->
+
+        <div class="card">
+
+            <h2>Education</h2>
+
+            <div class="education-box">
+
+                <h3>
+                    B.Sc. Information Technology
+                </h3>
+
+                <p>
+                    Sri GVG Visalakshi College for Women
+                    (2023 - 2026)
+                </p>
+
+
+                <h3>
+                    Higher Secondary Education
+                </h3>
+
+                <p>
+                    Bhaarath Vidhya Bhavan Matriculation
+                    Higher Secondary School,
+                    Shanmuganathi, Palani
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ===== TECHNICAL SKILLS ===== -->
+
+        <div class="card">
+
+            <h2>Technical Skills</h2>
+
+            <div class="skills">
+
+                <div class="skill">
+                    HTML
+                </div>
+
+                <div class="skill">
+                    CSS
+                </div>
+
+                <div class="skill">
+                    Java (Basics)
+                </div>
+
+                <div class="skill">
+                    C Programming
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ===== SOFT SKILLS ===== -->
+
+        <div class="card">
+
+            <h2>Soft Skills</h2>
+
+            <div class="soft-skills">
+
+                <div class="soft">
+                    Effective Communication
+                </div>
+
+                <div class="soft">
+                    Teamwork
+                </div>
+
+                <div class="soft">
+                    Quick Learner
+                </div>
+
+                <div class="soft">
+                    Time Management
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ===== CONTACT ===== -->
+
+        <div class="card contact">
+
+            <h2>Contact</h2>
+
+            <p>
+                📧 Email:
+                <a href="mailto:gomathikumarasam31@gmail.com">
+                    gomathikumarasam31@gmail.com
+                </a>
+            </p>
+
+            <p>
+                📞 Phone:
+                <a href="tel:+919345859487">
+                    9345859487
+                </a>
+            </p>
+
+            <p>
+                🔗 LinkedIn:
+                <a href="https://www.linkedin.com/in/kumarathal-k-628357431"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Kumarathal
+                </a>
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- ===== FOOTER ===== -->
+
+    <footer>
+
+        <p>
+            © 2026 Kumarathal | Personal Portfolio
+        </p>
+
+    </footer>
+
+</body>
+</html>
